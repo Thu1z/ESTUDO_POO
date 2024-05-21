@@ -1,9 +1,15 @@
-﻿Musica musica1 = new Musica();
-musica1.Nome = "Paypal";
-musica1.Artista = "Teto";
-musica1.Duracao = 166;
-musica1.Disponivel = true;
+﻿Album albumDoqueen = new Album();
+albumDoqueen.Nome = "A night at the opera";
 
-musica1.ExibirFichaTecnica();
-Console.WriteLine(musica1.DescricaoResumida);
+Musica musica1 = new Musica();
+musica1.Nome = "Love of my life";
+musica1.Duracao = 213;
 
+Musica musica2 = new Musica();
+musica2.Nome = "Bohemian Rhapsody";
+musica2.Duracao = 354;
+
+albumDoqueen.AdicionarMusica(musica1);
+albumDoqueen.AdicionarMusica(musica2);
+
+albumDoqueen.ExibirMusicasDoAlbum();
